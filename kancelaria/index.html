@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-              
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <link rel="stylesheet" type="text/css" href="resources/scss/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         
@@ -16,14 +17,14 @@
 
     <body>
          <header>
-                 <nav>
+                 <nav class="main-nav">
                    <div class="row">
-                   <img src="resources/img/Amelia_Zembaczynska_logo2.png" alt="Logo Kancelarii">
+                   <img src="resources/img/Amelia_Zembaczynska_logo2.png" alt="Logo Kancelarii" class="logo-kancelaria">
                     <ul class="nav">
-                         <a class="btn" id="a" href="#">O nas</a>
-                         <a class="btn" id="b" href="#">RODO / Ochrona danych osobowych</a>
-                         <a class="btn" id="c" href="#">Usługi</a>
-                         <a class="btn" id="d" href="#">Kontakt</a>
+                         <a class="btn" href="#o-nas">O nas</a>
+                         <a class="btn" href="#rodo">RODO / Ochrona danych osobowych</a>
+                         <a class="btn" href="#uslugi">Usługi</a>
+                         <a class="btn" href="#kontakt">Kontakt</a>
                      </ul>
                    </div>
                  </nav>
@@ -32,7 +33,7 @@
                  <p>"Wiedza specjalistyczna, praktyczne doświadczenie,<br> dostęp do najlepszych rozwiązań biznesowych."</p>
                  </div>
          </header>
-        <div class="row-section-about "> 
+        <div class="row-section-about js--section-about" id="o-nas"> 
         <section class="section-about clearfix">
              <div class="row row-about">
                     <div class="renoma-box">
@@ -49,7 +50,7 @@
             <div class="row">
                 <h3>Nasz Zespoł</h3>
             </div>
-            <div class="row team-row">
+            <div class="row team-row js--wp-1">
                 <div class="col span-1-of-2 team-box">
                     <img src="resources/img/Amelia-Zembaczy%C5%84ska.jpg" alt="Amelia Zembaczyńska" class="team-photo">
                     <p>Amelia Zembaczyńska</p>
@@ -64,11 +65,11 @@
         </section>
         </div>
         
-        <section class="section-services clearfix">
+        <section class="section-services clearfix " id="uslugi">
             <div class="row">
                 <h3>Usługi naszej kancelarii</h3>
             </div>
-            <div class="row">
+            <div class="row js--wp-2">
                 <div class="col span-1-of-3 services-box">
                     <img src="resources/img/user-tie-solid.svg" class="services-logo">
                     <p class="services-head-text">Usługi dla przedsiębiorcow</p>
@@ -86,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-services-information">
+        <section class="section-services-information" id="rodo">
                <div class="services-information-image">
                 <h3>Ochrona Danych Osobowych</h3>
                 <p> Bezpieczeństwo Twoje i Twoich Klientow</p>
@@ -164,6 +165,7 @@
             <p>Footer</p>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="resources/js/app.js"></script>
+        <script src="resources/js/script.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
     </body>
 </html>
