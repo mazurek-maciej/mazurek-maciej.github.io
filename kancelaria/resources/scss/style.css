@@ -394,6 +394,8 @@ nav img {
   .all-services-navigation .btn:hover {
     color: #00b894;
     border-bottom: 2px solid #4b4b4b; }
+  .all-services-navigation .active {
+    color: #00b894; }
 
 .services-all-box {
   font-weight: 300;
@@ -413,14 +415,30 @@ nav img {
 .all-services-btn-active {
   color: #00b894; }
 
-.services-all-services .col:first-child {
-  margin-left: 1.6%; }
-.services-all-services .col {
-  float: none; }
-.services-all-services h3 {
-  margin-bottom: 40px; }
-.services-all-services .service {
-  border-top: 1px solid #4a4a4a; }
+.services-all-services {
+  /* ---- treść zakładek ---- */ }
+  .services-all-services .col:first-child {
+    margin-left: 1.6%; }
+  .services-all-services .col {
+    float: none; }
+  .services-all-services h3 {
+    margin-bottom: 40px;
+    margin-top: 20px; }
+  .services-all-services .service {
+    border-top: 1px solid #4a4a4a; }
+  .services-all-services .tabs {
+    list-style-type: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    clear: both;
+    padding-bottom: 10px;
+    overflow: hidden; }
+  .services-all-services .tabs-container.js .tab-content {
+    display: none; }
+  .services-all-services .tabs-container.js .tab-content.active {
+    display: block; }
+  .services-all-services .tabs-container {
+    border-top: 1px solid black; }
 
 /* -------------- */
 /*  Contact Section */
@@ -479,3 +497,5 @@ nav img {
 
 .js--wp-1.animated {
   opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */

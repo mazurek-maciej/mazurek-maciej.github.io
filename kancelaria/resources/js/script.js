@@ -1,4 +1,4 @@
-function openService1(evt, service) {
+/*function openService1(evt, service) {
   var i, x, tablinks;
   x = document.getElementsByClassName("service");
   for (i = 0; i < x.length; i++) {
@@ -11,7 +11,41 @@ function openService1(evt, service) {
   document.getElementById(service).style.display = "block";
   evt.currentTarget.className += " all-services-btn-active";
 }
+*/
 
+$(function() {
+    //dla każdego kontenera z treścią tabów dodajemy klasę js -> patrz dalej
+    $('.tabs-container').addClass('js');
+
+    $('.tabs').each(function() {
+        const $a = $(this).find('a'); //pobieram wszystkie linki-zakładki
+
+        //po kliknięciu na link...
+        $a.on('click', function(e) {
+            //podstawiamy pod zmienną $this kliknięty link
+            const $this = $(this);
+
+            //pobieramy href klikniętego linka
+            const href = $this.attr('href');
+            //pobieramy treść na którą wskazuje link
+            const $target = $(href);
+
+            //jeżeli ta treść w ogóle istnieje...
+            if ($target.length) {
+                e.preventDefault(); //przerwij domyślną czynność jeżeli istnieje zawartość zakładki - inaczej niech dziala jak link
+
+                //usuwamy z sąsiednich linków klasę active
+                $this.siblings('a').removeClass('active');
+                //klikniętemu linkowi dajemy klasę active
+                $this.addClass('active');
+
+                //podobne działanie robimy dla treści tabów
+                $target.siblings('.tab-content').removeClass('active');
+                $target.addClass('active');
+            }
+        });
+    });
+});
 
 
 
