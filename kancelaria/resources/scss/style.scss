@@ -278,7 +278,10 @@ nav img {
     box-shadow: 0 0 0 2px #f4f4f4;
     -webkit-transition: border 0.2s, opacity 0.5s, -webkit-box-shadow 0.2s ease-out;
     transition: border 0.2s, opacity 0.5s, -webkit-box-shadow 0.2s ease-out;
+    -webkit-transition: border 0.2s, opacity 0.5s ease-out, -webkit-box-shadow 0.2s;
+    transition: border 0.2s, opacity 0.5s ease-out, -webkit-box-shadow 0.2s;
     transition: border 0.2s, box-shadow 0.2s, opacity 0.5s ease-out;
+    transition: border 0.2s, box-shadow 0.2s, opacity 0.5s ease-out, -webkit-box-shadow 0.2s;
     transition: border 0.2s, box-shadow 0.2s, opacity 0.5s, -webkit-box-shadow 0.2s ease-out;
     opacity: 0.8;
 }
@@ -391,6 +394,7 @@ nav img {
             font-size: 140%;
             background-color: #fff;
             height: 300px;
+            -webkit-transition: all 0.2s ease-out;
             transition: all 0.2s ease-out;
         }
         .services-information-box:hover {
@@ -431,6 +435,7 @@ nav img {
         margin: 0 20px 5px 20px;
         font-size: 125%;
         border-bottom: 2px solid transparent;
+        -webkit-transition: all 0.2s;
         transition: all 0.2s;
     }
     .btn:hover {
@@ -524,7 +529,11 @@ nav img {
 .footer {
     background-color: black;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
+    -webkit-box-pack: center; 
+    -ms-flex-pack: center; 
     justify-content: center;
     
     img {
