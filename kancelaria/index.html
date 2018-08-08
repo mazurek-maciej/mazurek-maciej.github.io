@@ -32,7 +32,9 @@
                  <h1>Kancelaria Adwokacka <br> Amelia Zembaczyńska</h1>
                  <p>"Wiedza specjalistyczna, praktyczne doświadczenie,<br> dostęp do najlepszych rozwiązań biznesowych."</p>
                  </div>
-         </header>
+        </header>
+        
+        
         <div class="row-section-about js--section-about" id="o-nas"> 
         <section class="section-about clearfix">
              <div class="row row-about">
@@ -45,6 +47,7 @@
              </div>
         </section>
         </div>
+        
         <div class="row-section-team"> 
         <section class="section-team clearfix">
             <div class="row">
@@ -71,22 +74,23 @@
             </div>
             <div class="row js--wp-2">
                 <div class="col span-1-of-3 services-box">
-                    <img src="resources/img/user-tie-solid.svg" class="services-logo">
+                    <a href="#uslugi-szczegoly"><img src="resources/img/user-tie-solid.svg" class="services-logo">
                     <p class="services-head-text">Usługi dla przedsiębiorcow</p>
-                    <p class="small-services-text">Obsługa spółek prawa handlowego, grup kapitałowych, jednoosobowych działalności gospodarczych.</p>
+                    <p class="small-services-text">Obsługa spółek prawa handlowego, grup kapitałowych, jednoosobowych działalności gospodarczych.</p></a>
                 </div>
                 <div class="col span-1-of-3 services-box">
-                    <img src="resources/img/user-alt-solid.svg" class="services-logo">
+                    <a href="#uslugi-szczegoly"><img src="resources/img/user-alt-solid.svg" class="services-logo">
                     <p class="services-head-text">Usługi dla klientow indywidualnych</p>
-                    <p class="small-services-text">Prawo rodzinne, prawo pracy, prawo spadkowe, windykacja należności, prawo karne, prawo cywilne, odszkodowania.</p>
+                    <p class="small-services-text">Prawo rodzinne, prawo pracy, prawo spadkowe, windykacja należności, prawo karne, prawo cywilne, odszkodowania.</p></a>
                 </div>
                 <div class="col span-1-of-3 services-box">
-                    <img src="resources/img/insurance.svg" class="services-logo">
+                    <a href="#uslugi-szczegoly"><img src="resources/img/insurance.svg" class="services-logo">
                     <p class="services-head-text">RODO</p>
-                    <p class="small-services-text">Ochrona danych osobowych jednym z kluczowych problemów współczesnej gospodarki. RODO to nie rewolucja, a ważny etap w ewolucji systemu europejskiego systemu ochrony danych osobowych.</p>
+                    <p class="small-services-text">Ochrona danych osobowych jednym z kluczowych problemów współczesnej gospodarki. RODO to nie rewolucja, a ważny etap w ewolucji systemu europejskiego systemu ochrony danych osobowych.</p></a>
                 </div>
             </div>
         </section>
+        
         <section class="section-services-information" id="rodo">
                <div class="services-information-image">
                 <h3>Ochrona Danych Osobowych</h3>
@@ -101,7 +105,8 @@
                    </div>
                </div>
                
-               <div class="row"><h3>W celu przygotowania się na zmiany RODO, Kancelaria świadczy szeroki wachlarz usług w zakresie:</h3></div>
+               <div class="row">
+               <h3>W celu przygotowania się na zmiany RODO, Kancelaria świadczy szeroki wachlarz usług w zakresie:</h3></div>
                
                <div class="row">
                 <div class="col span-1-of-3 services-information-box">
@@ -119,53 +124,159 @@
             </div>
         </section>
         
-        <section class="services-handel-i-uslugi">
+        <section class="services-all-services" id="uslugi-szczegoly">
+            <h3>Nasza Kancelaria pełni usługi w czterech sektorach</h3>
              <div class="row">
-              <div class="w3-bar w3-black">
-                <a class="w3-bar-item w3-button tablink w3-red btn" onclick="openService1(event,'Service1')">Obsługa prawna przedsiębiorcow</a>
-                <a class="w3-bar-item w3-button tablink btn" onclick="openService1(event,'Service2')">Prawo medyczne</a>
-                <a class="w3-bar-item w3-button tablink btn" onclick="openService1(event,'Service3')">Prawo karne</a>
-                <a class="w3-bar-item w3-button tablink btn" onclick="openService1(event,'Service4')">Odszkodowania</a>
+              <div class="all-services-navigation">
+                <a class="tablink w3-red btn" onclick="openService1(event,'Service1')">Handel i Usługi</a>
+                <a class="tablink btn" onclick="openService1(event,'Service2')">Nowe Technologie</a>
+                <a class="tablink btn" onclick="openService1(event,'Service3')">Transport</a>
+                <a class="tablink btn" onclick="openService1(event,'Service4')">Budownictwo</a>
               </div>
-              <nav id="Service1" class="w3-container w3-border service1">
+              
+              <nav id="Service1" class="service">
+                  
                    <div class="row">
-                    <ul class="nav-services">
-                         <a class="btn" id="a" href="#">Obsługa prawna przedsiębiorcow</a>
-                         <a class="btn" id="b" href="#">Prawo medyczne</a>
-                         <a class="btn" id="c" href="#">Prawo karne</a>
-                         <a class="btn" id="d" href="#">Odszkodowania</a>
-                     </ul>
+                      
+                       <div class="col span-1-of-1 services-all-box">
+                        <p class="services-information-heading">Obsługa prawna przedsiębiorcow</p>
+                        <p class="services-information-text"></p>
+                        <li>Bieżąca obsługa prawna działalności gospodarczej – prawo cywilne, umowy, prawo pracy, prawo administracyjne, windykacja należności, nieuczciwa konkurencja;</li>
+                        <li>Obsługa w tworzeniu spółek, oddziałów oraz przedstawicielstw;</li>
+                        <li>Tworzenie i weryfikacja zasad ładu korporacyjnego;</li>
+                        <li>Obsługa zgromadzeń wspólników/akcjonariuszy oraz bieżących spraw dotyczących funkcjonowania zarządów i rad nadzorczych;</li>
+                        <li>Opracowywanie i negocjowanie umów inwestycyjnych;</li>
+                        <li>Reprezentacja w sporach sądowych.</li>
+                        </div>
+                        
+                        <div class="col span-1-of-1 services-all-box">
+                            <p class="services-information-heading">Prawo medyczne</p>
+                            <p class="services-information-text"></p>
+                            <li>Stała i kompleksowa obsługa gabinetów lekarskich, stomatologicznych oraz innych podmiotów leczniczych;</li>
+                            <li>Opracowywanie i opiniowanie umów oraz innych dokumentów związanych z świadczeniem usług medycznych;</li>
+                            <li>Analiza zasad prowadzenia i udostępniania dokumentacji medycznej oraz opracowanie oraz wdrożenie dokumentacji dotyczącej ochrony danych osobowych;</li>
+                            <li>Reprezentacja stron w sprawach cywilnych w postępowaniu przedsądowym oraz sądowym w sprawach o odszkodowanie z tytułu błędów w sztuce lekarskiej;</li>
+                            <li>Reprezentacja prawna stron w postępowaniu karnym dotyczących odpowiedzialności za błędy w sztuce lekarskiej;</li>
+                            <li>Reprezentacja lekarzy w postępowaniu z zakresu odpowiedzialności zawodowej lekarzy.</li>
+                        </div>
+                        
+                        <div class="col span-1-of-1 services-all-box">
+                            <p class="services-information-heading">Prawo karne</p>
+                            <p class="services-information-text"></p>
+                            <li>Obrona w sprawach karnych, karnoskarbowych, wykroczeniach, zarówno w postępowaniu przygotowawczym, jak i sądowym;</li>
+                            <li>Reprezentacja pokrzywdzonych w sprawach karnych, karnoskarbowych w charakterze oskarżycieli posiłkowych, powodów cywilnych, oskarżycieli prywatnych;</li>
+                            <li>Pomoc skazanym w postępowaniu karnym wykonawczym;</li>
+                            <li>Pomoc w sporządzeniu pism procesowych – zażalenia, apelacji, kasacji, prywatny akt oskarżenia, wniosek o warunkowe przedterminowe zwolnienie z odbycia kary pozbawienia wolności, wniosek o odroczenie wykonania kary pozbawienia wolności;</li>
+                            <li>Uzyskanie zgody na wykonywanie kary w systemie dozoru elektronicznego.</li>
+                        </div>
+                          <div class="col span-1-of-1 services-all-box">
+                            <p class="services-information-heading">Odszkodowania</p>
+                            <p class="services-information-text"></p>
+                            <li>Reprezentacja prawna w dochodzeniu roszczeń odszkodowawczych za szkody majątkowe w ramach ubezpieczenia AC i OC;</li>
+                            <li>Reprezentacja prawna w dochodzeniu roszczeń niemajątkowych – zadośćuczynienia za doznane krzywdy i cierpienia.</li>
+                        </div>
+                   
                    </div>
                  </nav>
-                 <nav id="Service2" class="w3-container w3-border service1" style="display:none">
+                 
+                 <nav id="Service2" class="service" style="display:none">
                    <div class="row">
                     <ul class="nav-services">
+                        <!--
                          <a class="btn" id="a" href="#">E-commerce</a>
                          <a class="btn" id="b" href="#">Ochrona Danych Osobowych – RODO</a>
+                         -->
+                         <div class="col span-1-of-1 services-all-box">
+                            <p class="services-information-heading">E-commerce</p>
+                            <p class="services-information-text"></p>
+                            <li>Przygotowywanie i negocjowanie umów dotyczących usług internetowych;</li>
+                            <li>Opracowywanie regulaminów, polityk prywatności portali internetowych, sklepów i aplikacji mobilnych;</li>
+                            <li>Doradztwo prawne w zakresie kampanii marketingowych z wykorzystaniem narzędzi internetowych;</li>
+                            <li>Weryfikacja treści regulaminów świadczenia usług drogą elektroniczną pod kątem zgodności z przepisami prawa z uwzględnieniem klauzul niedozwolonych</li>
+                        </div>
+                        <div class="col span-1-of-1 services-all-box">
+                            <p class="services-information-heading">Ochrona Danych Osobowych – RODO</p>
+                            <p class="services-information-text"></p>
+                            <li>Bieżące doradztwo z zakresu prawa ochrony danych osobowych;</li>
+                            <li>Opracowywanie, wdrożenie i zmiany wymaganej prawem dokumentacji przetwarzania danych osobowych</li>
+                            <li>Audyt zgodności dotychczasowych zasad przetwarzanie danych osobowych;</li>
+                            <li>Zarządzenie incydentami naruszeń ochrony danych osobowych, programy zapobiegania naruszeniom ochrony;</li>
+                            <li>Opracowywanie umów powierzenia przetwarzania danych osobowych;</li>
+                            <li>Reprezentacja przed Urzędem Ochrony Danych Osobowych, a także przed sądami administracyjnymi;</li>
+                            <li>Prowadzenie indywidualnych oraz grupowych szkoleń dopasowanych do profilu organizacji;</li>
+                            <li>Kompleksowa obsługa w zakresie ochrony prywatności konsumentów;</li>
+                            <li>Ochrona tajemnicy handlowej, informacji poufnych, informacji gospodarczych.</li>
+                        </div>
+                         
                      </ul>
                    </div>
                  </nav>
-                 <nav id="Service3" class="w3-container w3-border service1" style="display:none">
+                 <nav id="Service3" class="service" style="display:none">
                    <div class="row">
                     <ul class="nav-services">
+                        <!--
                          <a class="btn" id="a" href="#">Prawo transportowe</a>
+                         -->
+                         <div class="col services-all-box p-trans">
+                            <p class="services-information-heading">Prawo transportowe</p>
+                            <p class="services-information-text"></p>
+                            <li>Reprezentacja przed służbami kontrolnymi – ITD oraz PIP;</li>
+                            <li>Wsparcie prawno-organizacyjne dla przedsiębiorców oraz kierowców;</li>
+                            <li>Wyjaśnienia dotyczące protokołów kontrolnych.</li>
+                        </div>
+                         
                      </ul>
                    </div>
                  </nav>
-                 <nav id="Service4" class="w3-container w3-border service1" style="display:none">
+                 <nav id="Service4" class="service" style="display:none">
                    <div class="row">
                     <ul class="nav-services">
+                        <!--
                          <a class="btn" id="a" href="#">Prawo budowlane</a>
+                         -->
+                         <div class="col span-1-of-1 services-all-box">
+                            <p class="services-information-heading">Prawo budowlane</p>
+                            <p class="services-information-text"></p>
+                            <li>Proces inwestycyjny;</li>
+                            <li>Przygotowanie i negocjowanie umów prawa budowlanego, umowy o roboty budowlane, umowy z podwykonawcami, umowę o prace projektowe i nadzór autorski;</li>
+                            <li>Doradztwo w zakresie zagadnień administracyjnych procesu budowlanego;</li>
+                            <li>Przygotowanie projektów i negocjowanie umów deweloperskich.</li>
+                        </div>
                      </ul>
                    </div>
                  </nav>
             </div> 
         </section>
+        
+        <section class="section-contact" id="kontakt">
+            <div class="row">
+                <h3>Skontaktuj się z Nami</h3>
+            
+            <div class="col span-5-of-8 contact-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.128562448135!2d17.92754732924639!3d50.673278848633196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471053a9d93c684f%3A0x1bb206fca081db98!2sAdwokat+Amelia+Zembaczy%C5%84ska!5e0!3m2!1spl!2spl!4v1533725651824" width="600" height="400" frameborder="0" style="border:0" allowfullscreen class="google-map"></iframe>
+            </div>
+            <div class="col span-3-of-8 contact-box contact-box-info">
+                    <img src="resources/img/ios-mail.svg" alt="Ikona mail">
+                    <p>amelia@zembaczynska.pl</p>
+                    <img src="resources/img/ios-phone-portrait.svg" alt="Ikona telefon">
+                    <p>514 945 286</p>
+                    <img src="resources/img/facebook-placeholder-for-locate-places-on-maps.svg" alt="Ikona pinezka">
+                    <p>Generała Władysława Andersa 11/2, 45-048 Opole</p>
+            </div>
+            </div>
+            
+        </section>
+        
+        
         <footer class="footer">
-            <p>Footer</p>
+            <img src="resources/img/Amelia_Zembaczynska_logo3.png" alt="Amelia Zembaczyńska Logo">
         </footer>
+        
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="resources/js/script.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+
     </body>
 </html>

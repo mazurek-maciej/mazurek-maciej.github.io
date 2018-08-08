@@ -142,7 +142,7 @@ header nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   z-index: 9999;
   height: 60px; }
@@ -298,6 +298,8 @@ nav img {
   border: 1px solid transparent;
   -webkit-transition: background-color 0.2s, border 0.2s;
   transition: background-color 0.2s, border 0.2s; }
+  .services-box a {
+    text-decoration: none; }
 
 .services-box:hover {
   background-color: #fafafa;
@@ -325,77 +327,139 @@ nav img {
 /* -------------- */
 /*  Services Information container */
 /* -------------- */
-.services-information-image {
-  background: url(key-us%C5%82ugi.svg);
-  background-size: cover;
-  height: 50vh;
-  color: #fff;
-  background-position: center; }
-
-.services-information-image p {
-  text-align: center;
-  font-weight: 300;
-  font-size: 160%;
-  color: #fff; }
-
-.services-information-image h3 {
-  font-size: 200%;
-  padding-top: 100px;
-  color: #fff; }
-
 .section-services-information {
-  display: block;
+  padding-bottom: 0;
   background-color: #fdfdfd; }
+  .section-services-information .services-information-image {
+    background: url(key-uslugi.png);
+    background-size: cover;
+    height: 50vh;
+    color: #fff;
+    background-position: center; }
+    .section-services-information .services-information-image p {
+      text-align: center;
+      font-weight: 300;
+      font-size: 160%;
+      color: #fff; }
+    .section-services-information .services-information-image h3 {
+      font-size: 200%;
+      padding-top: 100px;
+      color: #fff; }
+  .section-services-information .section-services-information {
+    display: block;
+    background-color: #fdfdfd; }
+    .section-services-information .section-services-information h3 {
+      margin-top: 20px; }
+  .section-services-information .services-information-box {
+    font-weight: 300;
+    padding-top: 40px;
+    font-size: 140%;
+    background-color: #fff;
+    height: 300px;
+    transition: all 0.2s ease-out; }
+  .section-services-information .services-information-box:hover {
+    background-color: #fdfdfd; }
+  .section-services-information .services-information-heading {
+    text-align: center;
+    font-size: 90%;
+    padding-bottom: 20px; }
+  .section-services-information .services-information-heading:after {
+    display: block;
+    height: 2px;
+    background-color: #00b894;
+    content: " ";
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 30px; }
+  .section-services-information .services-information-text {
+    font-weight: 100;
+    font-size: 70%; }
 
-.services-information-box {
+/* -------------- */
+/*  Services All Services wszystkie usługi */
+/* -------------- */
+.all-services-navigation {
+  text-align: center;
+  margin-bottom: 20px; }
+  .all-services-navigation .btn {
+    margin: 0 20px 5px 20px;
+    font-size: 125%;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s; }
+  .all-services-navigation .btn:hover {
+    color: #00b894;
+    border-bottom: 2px solid #4b4b4b; }
+
+.services-all-box {
   font-weight: 300;
   padding-top: 40px;
-  font-size: 140%;
+  font-size: 120%;
   background-color: #fff;
-  height: 300px;
-  transition: all 0.2s ease-out; }
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+  .services-all-box .services-information-heading {
+    font-size: 102%;
+    padding-bottom: 10px; }
+  .services-all-box li {
+    color: #5a5a5a;
+    padding-bottom: 5px; }
 
-.services-information-box:hover {
-  background-color: #fbfbfb; }
+.all-services-btn-active {
+  color: #00b894; }
 
-.services-information-heading {
-  text-align: center;
-  font-size: 90%;
-  padding-bottom: 20px; }
-
-.services-information-heading:after {
-  display: block;
-  height: 2px;
-  background-color: #00b894;
-  content: " ";
-  width: 50px;
-  margin: 0 auto;
-  margin-top: 30px; }
-
-.services-information-text {
-  font-weight: 100;
-  font-size: 70%; }
+.services-all-services .col:first-child {
+  margin-left: 1.6%; }
+.services-all-services .col {
+  float: none; }
+.services-all-services h3 {
+  margin-bottom: 40px; }
+.services-all-services .service {
+  border-top: 1px solid #4a4a4a; }
 
 /* -------------- */
-/*  Services Handel i Usługi container */
+/*  Contact Section */
 /* -------------- */
-/* -------------- */
-/*  Services Nowe technologie container */
-/* -------------- */
-/* -------------- */
-/*  Services Transport container */
-/* -------------- */
-/* -------------- */
-/*  Services Budownictwo container */
-/* -------------- */
+.section-contact {
+  background-color: #fdfdfd; }
+  .section-contact h3 {
+    margin-bottom: 50px; }
+  .section-contact .contact-box {
+    margin: 0;
+    display: inline-block;
+    float: left; }
+  .section-contact .contact-phone-box {
+    height: 80px; }
+    .section-contact .contact-phone-box p {
+      font-size: 130%;
+      font-family: 'Lato';
+      display: inline-block; }
+
+.contact-box-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 20px; }
+  .contact-box-info img {
+    width: 80px;
+    height: 80px; }
+  .contact-box-info p {
+    padding-top: 20px;
+    font-size: 110%;
+    font-family: 'Lato'; }
+
 /* -------------- */
 /*  Footer */
 /* -------------- */
 .footer {
   background-color: black;
   color: white;
-  grid-row: 4;
-  grid-column: 1; }
+  display: flex;
+  justify-content: center; }
+  .footer img {
+    width: 190px;
+    height: 130px;
+    padding: 10px 0 10px 0; }
 
 /* -------------- */
 /*  Animations */

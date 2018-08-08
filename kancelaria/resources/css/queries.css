@@ -22,10 +22,10 @@
 }
 
 @media only screen and (max-width: 1023px) {
-    
+
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     .header-text {
         display: block;
@@ -47,6 +47,22 @@
     nav {
         display: none;
     }
+    
+    .small-services-text {
+        font-size: 80%;
+    }
+    .google-map {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .contact-box-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 0;
+    }
+    
 }
 
 @media only screen and (max-width: 480px) {
