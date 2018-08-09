@@ -24,11 +24,7 @@
 
 @media only screen and (max-width: 1023px) {
     nav {display: none;}
-    .section-about p {
-    font-weight: 300;
-    font-size: 120%;
-    padding: 0;
-    }
+    
     .section-about h2{font-size: 140%;}
     .row-about {
         background-color: #f8f8f8;
@@ -65,17 +61,23 @@
     }
     .header-text h1 {
         text-align: center;
-        font-size: 300%;
-        padding-right: 0;
+        font-size: 220%;
+        padding: 100px 0 0 0;
         color: #fff;
     }
     .header-text p {
         font-size: 120%;
         font-weight: 300;
-        padding: 0 0 50px 0;
+        padding: 10px 0 0 0;
         color: #fff;
+        text-align: center;
     }
-    
+    .renoma-box h2 {
+        font-size: 120%;
+    }
+    .renoma-box p {
+        font-size: 100%;
+    }
     .small-services-text {
         font-size: 80%;
     }
@@ -83,13 +85,30 @@
         width: 400px;
         height: 300px;
     }
-    
     .contact-box-info {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 3fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-row-gap: 0;
     }
+    .section-team h3 {font-size: 140%; padding-top: 20px;}
+    .team-box p {font-size: 90%;}
+    .team-proffesion {padding-bottom: 10px;}
+    .section-services h3 {font-size: 120%; margin: 0; padding-top: 20px; }
+    .services-box {padding: 20px 0 10px 0; height: auto;}
+    .section-services-information {padding-top: 40px;}
+    .services-information-box {font-size: 100%; height: auto;}
+    .section-services-information h3 {font-size: 110%; padding-top: 20px;}
+    .section-services-information .services-information-box {height: auto; padding: 10px 0 10px 0; font-size: 120%;}
+    .ser-info-text {font-size: 60%;}
+    
+    .services-all-services {padding-top: 40px}
+    .services-all-services h3 {font-size: 120%; margin: 10px;}
+    .all-services-navigation {font-size: 70%;}
+    .tab-title {margin: 0;}
+    .services-all-box li {font-size: 70%;}
+    
+    
     nav {display: none;}
 
 @media only screen and (max-width: 480px) {
@@ -101,7 +120,7 @@
         padding: 0;
     }
     .renoma-box h2 {
-        font-size: 160%;
+        font-size: 120%;
     }
     .renoma-box {
         display: grid;
@@ -112,7 +131,7 @@
         padding: 0;
     }
     .team-photo {
-        height: 250px;
+        height: 200px;
         width: auto;
     }
     .mobile-nav-icon {
