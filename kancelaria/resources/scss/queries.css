@@ -90,7 +90,7 @@
         font-size: 80%;
     }
     .google-map {
-        width: 350px;
+        width: 310px;
         height: 300px;
         margin-left: 8%; 
     }
@@ -122,7 +122,7 @@
     .services-all-box {padding: 0 10px 0 10px;}
     .section-contact {padding-top: 40px;}
     .section-contact h3 {font-size: 120%;}
-    
+    .services-all-services .col:first-child {margin-left: 0;}
     .nav .btn{display: none;}
     .nav .responsive {position: relative;}
       .nav  .icon {
