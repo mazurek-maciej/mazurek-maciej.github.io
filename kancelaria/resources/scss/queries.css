@@ -109,7 +109,7 @@
     .section-services {padding: 40px 0 40px 0;}
     .section-services-information {padding: 40px 0 40px 0}
     .services-information-box {font-size: 100%; height: auto;}
-    .section-services-information h3 {font-size: 110%; padding-top: 20px;}
+    .section-services-information .services-information-image h3 {font-size: 200%; padding-top: 50px;}
     .section-services-information .services-information-box {height: auto; padding: 10px 10px 10px 10px; font-size: 120%;}
     .ser-info-text {font-size: 60%;}
     .row-section-team {padding: 40px 0 40px 0;}
@@ -122,7 +122,6 @@
     .services-all-box {padding: 0 10px 0 10px;}
     .section-contact {padding-top: 40px;}
     .section-contact h3 {font-size: 120%;}
-    
     
     .nav .btn{display: none;}
     .nav .responsive {position: relative;}

@@ -196,7 +196,10 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
     margin-right: 0; }
 
   .header .navbar > .container {
-    width: auto; } }
+    width: auto; }
+
+  a.nav-item-child {
+    margin-left: 30px; } }
 /* Toggle  */
 .header .nav-item-hover:after, .link:after, .work .work-overlay:before {
   content: " "; }
