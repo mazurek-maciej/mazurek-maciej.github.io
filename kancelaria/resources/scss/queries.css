@@ -10,6 +10,7 @@
         font-size: 300%;
         padding-right: 0;
         color: #fff;
+        padding: 100px 100px 0 0;
     }
     .header-text p {
         font-size: 120%;
@@ -23,8 +24,13 @@
 }
 
 @media only screen and (max-width: 1023px) {
-    nav {display: none;}
-    
+    .header-text h1 {
+        text-align: center;
+        font-size: 300%;
+        padding-right: 0;
+        color: #fff;
+        padding: 100px 100px 0 0;
+    }
     .section-about h2{font-size: 140%;}
     .row-about {
         background-color: #f8f8f8;
@@ -50,8 +56,15 @@
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 2fr 2fr;
     }
+    .google-map {
+        width: 450px;
+        height: 300px;
+        margin-left: 10%; 
+    }
 }
-
+@media only screen and (max-width: 900px) {
+    .nav .btn {display: none;}
+}
 @media only screen and (max-width: 768px) {
 
     .header-text {
@@ -59,12 +72,7 @@
         float: right;
         margin: 0;
     }
-    .header-text h1 {
-        text-align: center;
-        font-size: 220%;
-        padding: 100px 0 0 0;
-        color: #fff;
-    }
+    
     .header-text p {
         font-size: 120%;
         font-weight: 300;
@@ -82,8 +90,9 @@
         font-size: 80%;
     }
     .google-map {
-        width: 400px;
+        width: 350px;
         height: 300px;
+        margin-left: 8%; 
     }
     .contact-box-info {
         display: grid;
@@ -91,29 +100,66 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-row-gap: 0;
     }
+    .row-section-about {padding: 40px 0 40px 0;}
     .section-team h3 {font-size: 140%; padding-top: 20px;}
     .team-box p {font-size: 90%;}
     .team-proffesion {padding-bottom: 10px;}
-    .section-services h3 {font-size: 120%; margin: 0; padding-top: 20px; }
+    .section-services h3 {font-size: 120%; margin: 0; padding: 0 0 20px 0;}
     .services-box {padding: 20px 0 10px 0; height: auto;}
-    .section-services-information {padding-top: 40px;}
+    .section-services {padding: 40px 0 40px 0;}
+    .section-services-information {padding: 40px 0 40px 0}
     .services-information-box {font-size: 100%; height: auto;}
     .section-services-information h3 {font-size: 110%; padding-top: 20px;}
     .section-services-information .services-information-box {height: auto; padding: 10px 10px 10px 10px; font-size: 120%;}
     .ser-info-text {font-size: 60%;}
-    
-    .services-all-services {padding-top: 40px}
+    .row-section-team {padding: 40px 0 40px 0;}
+    .section-team {padding: 0;}
+    .services-all-services {padding: 40px 0 40px 0;}
     .services-all-services h3 {font-size: 120%; margin: 10px;}
     .all-services-navigation {font-size: 70%;}
     .tab-title {margin: 0;}
     .services-all-box li {font-size: 70%;}
     .services-all-box {padding: 0 10px 0 10px;}
+    .section-contact {padding-top: 40px;}
+    .section-contact h3 {font-size: 120%;}
     
     
-    nav {display: none;}
+    .nav .btn{display: none;}
+    .nav .responsive {position: relative;}
+      .nav  .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .nav.responsive .btn {
+        display: inline-block;
+          float: left;
+      }
+    
+    
+    
+    /*nav {display: none;}
+    .mobile-nav-icon {display: inline-block;}
+    .main-nav {float: left; width: 100%;}
+    .main-nav ul {display: block; float: left;}
+    .main-nav ul a:link,
+    .main-nav ul a:visited {
+        display: block;
+        border: 0;
+        font-size: 80%;
+    }
+    .logo-kancelaria {float: left;}
+    */
+    
 
 @media only screen and (max-width: 480px) {
 
+    .header-text h1 {
+        text-align: center;
+        font-size: 220%;
+        padding: 100px 0 0 0;
+        color: #fff;
+    }
     .renoma-logo {
         margin-bottom: 20px;
     }
@@ -138,6 +184,5 @@
     .mobile-nav-icon {
         display: block;
     }
-    nav {display: none;}
 }
 

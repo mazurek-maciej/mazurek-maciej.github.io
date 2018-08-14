@@ -112,9 +112,44 @@ $(document).ready(function() {
     });
     
     $(".js--wp-2").waypoint(function(direction) {
-        $('.js--wp-2').addClass('animated fadeIn')
+        $('.js--wp-2').addClass('animated zoomIn')
     }, {
         offset: "60%"
     });
     
+    $(".js--wp-3").waypoint(function(direction) {
+        $('.js--wp-3').addClass('animated fadeInUp')
+    }, {
+        offset: "60%"
+    });
+    
+    $(".js--wp-4").waypoint(function(direction) {
+        $('.js--wp-4').addClass('animated fadeIn')
+    }, {
+        offset: "50%"
+    });
+    $(".js--wp-5").waypoint(function(direction) {
+        $('.js--wp-5').addClass('animated fadeIn')
+    }, {
+        offset: "50%"
+    });
+    
 });
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+/*
+function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+
+document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+*/

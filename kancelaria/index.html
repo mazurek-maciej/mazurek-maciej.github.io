@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/scss/style.css">
         <link rel="stylesheet" type="text/css" href="resources/scss/queries.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#000000">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
         
         <title>Kancelaria Adwokacka Amelia Zembaczyńska</title>
     </head>
     
 
     <body>
-         <header id="poczatek">
-                 <nav class="main-nav">
-                   <div class="row">
-                   <a href="#poczatek"><img src="resources/img/Amelia_Zembaczynska_logo2.png" alt="Logo Kancelarii" class="logo-kancelaria"></a>
-                    <ul class="nav">
-                         <a class="btn" href="#o-nas">O nas</a>
-                         <a class="btn" href="#rodo">RODO / Ochrona danych osobowych</a>
-                         <a class="btn" href="#uslugi">Usługi</a>
-                         <a class="btn" href="#kontakt">Kontakt</a>
-                     </ul>
-                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-                   </div>
-                 </nav>
-                 <div class="header-text">
-                 <h1>Kancelaria Adwokacka <br> Amelia Zembaczyńska</h1>
-                 <p>"Wiedza specjalistyczna, praktyczne doświadczenie,<br> dostęp do najlepszych rozwiązań biznesowych."</p>
-                 </div>
+
+        <header class="header navbar-fixed-top" id="poczatek">
+            
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="container">
+                    <div class="menu-container js_nav-item">
+                    </div>
+                    <input type="checkbox" name="toggle" id="toggle"/>
+                    <label for="navbar-toggle"></label>
+                    <div class="menu-mobile">
+                        <div class="collapse navbar-collapse nav-collapse ">
+                            <div class="menu-container">
+                               <nav class="main-nav">
+                               <div class="row">
+                               <a href="#poczatek"><img src="resources/img/Amelia_Zembaczynska_logo2.png" alt="Logo Kancelarii" class="logo-kancelaria"></a>
+                                <ul class="nav navbar-nav container-right ">
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="#o-nas">O nas</a></li>
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="#rodo">Ochrona danych osobowych</a></li>
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="#uslugi">Usługi</a></li>
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="#kontakt">Kontakt</a></li>
+                                </ul>
+                                </div>
+                                </nav>
+                            </div>
+                        </div>
+                	</div>
+                </div>
+            </nav>
         </header>
         
+        <div class="front js--wp-5">
+            <div class="header-text">
+                <h1>Kancelaria Adwokacka <br> Amelia Zembaczyńska</h1>
+                <p>"Wiedza specjalistyczna, praktyczne doświadczenie,<br> dostęp do najlepszych rozwiązań biznesowych."</p>
+            </div>
+        </div>
+                
         
         <div class="row-section-about js--section-about" id="o-nas"> 
-        <section class="section-about clearfix">
+        <section class="section-about clearfix  js--wp-3">
              <div class="row row-about">
                     <div class="renoma-box">
                     <img src="resources/img/quality.svg" alt="Renoma" class="renoma-logo">
@@ -61,7 +92,7 @@
                     <p class="team-proffesion">Adwokat</p>
                 </div>
                 <div class="col span-1-of-2 team-box">
-                    <img src="resources/img/Micha%C5%82-Kondratowicz.png" alt="Michał Kondratowicz" class="team-photo">
+                    <img src="resources/img/Micha%C5%82-Kondratowicz.jpg" alt="Michał Kondratowicz" class="team-photo">
                     <p>Michał Kondratowicz</p>
                     <p class="team-proffesion">Asystent prawny</p>
                 </div>
@@ -75,17 +106,17 @@
             </div>
             <div class="row js--wp-2">
                 <div class="col span-1-of-3 services-box">
-                    <a href="#uslugi-szczegoly"><img src="resources/img/user-tie-solid.svg" class="services-logo">
+                    <a href="#uslugi-szczegoly"><img src="resources/img/user-tie-solid.svg" class="services-logo" alt="logo-uslugi-dla-przedsiebiorcow">
                     <p class="services-head-text">Usługi dla przedsiębiorcow</p>
                     <p class="small-services-text">Obsługa spółek prawa handlowego, grup kapitałowych, jednoosobowych działalności gospodarczych.</p></a>
                 </div>
                 <div class="col span-1-of-3 services-box">
-                    <a href="#uslugi-szczegoly"><img src="resources/img/user-alt-solid.svg" class="services-logo">
+                    <a href="#uslugi-szczegoly"><img src="resources/img/user-alt-solid.svg" class="services-logo" alt="logo-uslugi-dla-klientow-indywidualnych">
                     <p class="services-head-text">Usługi dla klientow indywidualnych</p>
                     <p class="small-services-text">Prawo rodzinne, prawo pracy, prawo spadkowe, windykacja należności, prawo karne, prawo cywilne, odszkodowania.</p></a>
                 </div>
                 <div class="col span-1-of-3 services-box">
-                    <a href="#uslugi-szczegoly"><img src="resources/img/insurance.svg" class="services-logo">
+                    <a href="#uslugi-szczegoly"><img src="resources/img/insurance.svg" class="services-logo" alt="logo-uslugi-RODO">
                     <p class="services-head-text">RODO</p>
                     <p class="small-services-text">Ochrona danych osobowych jednym z kluczowych problemów współczesnej gospodarki. RODO to nie rewolucja, a ważny etap w ewolucji systemu europejskiego systemu ochrony danych osobowych.</p></a>
                 </div>
@@ -109,7 +140,7 @@
                <div class="row">
                <h3>W celu przygotowania się na zmiany RODO, Kancelaria świadczy szeroki wachlarz usług w zakresie:</h3></div>
                
-               <div class="row">
+               <div class="row js--wp-4">
                 <div class="col span-1-of-3 services-information-box">
                     <p class="services-information-heading">Konsultacji prawnej</p>
                     <p class="services-information-text">Celem wdrożenia oraz realizacji zadań z zakresu ochrony danych osobowych</p>
@@ -145,39 +176,47 @@
                                 <div class="col span-1-of-1 services-all-box">
                                 <p class="services-information-heading">Obsługa prawna przedsiębiorcow</p>
                                 <p class="services-information-text"></p>
+                                <ul>
                                 <li>Bieżąca obsługa prawna działalności gospodarczej – prawo cywilne, umowy, prawo pracy, prawo administracyjne, windykacja należności, nieuczciwa konkurencja;</li>
                                 <li>Obsługa w tworzeniu spółek, oddziałów oraz przedstawicielstw;</li>
                                 <li>Tworzenie i weryfikacja zasad ładu korporacyjnego;</li>
                                 <li>Obsługa zgromadzeń wspólników/akcjonariuszy oraz bieżących spraw dotyczących funkcjonowania zarządów i rad nadzorczych;</li>
                                 <li>Opracowywanie i negocjowanie umów inwestycyjnych;</li>
                                 <li>Reprezentacja w sporach sądowych.</li>
+                                </ul>
                                 </div>
 
                                 <div class="col span-1-of-1 services-all-box">
                                     <p class="services-information-heading">Prawo medyczne</p>
                                     <p class="services-information-text"></p>
+                                    <ul>
                                     <li>Stała i kompleksowa obsługa gabinetów lekarskich, stomatologicznych oraz innych podmiotów leczniczych;</li>
                                     <li>Opracowywanie i opiniowanie umów oraz innych dokumentów związanych z świadczeniem usług medycznych;</li>
                                     <li>Analiza zasad prowadzenia i udostępniania dokumentacji medycznej oraz opracowanie oraz wdrożenie dokumentacji dotyczącej ochrony danych osobowych;</li>
                                     <li>Reprezentacja stron w sprawach cywilnych w postępowaniu przedsądowym oraz sądowym w sprawach o odszkodowanie z tytułu błędów w sztuce lekarskiej;</li>
                                     <li>Reprezentacja prawna stron w postępowaniu karnym dotyczących odpowiedzialności za błędy w sztuce lekarskiej;</li>
                                     <li>Reprezentacja lekarzy w postępowaniu z zakresu odpowiedzialności zawodowej lekarzy.</li>
+                                    </ul>
                                 </div>
 
                                 <div class="col span-1-of-1 services-all-box">
                                     <p class="services-information-heading">Prawo karne</p>
                                     <p class="services-information-text"></p>
+                                    <ul>
                                     <li>Obrona w sprawach karnych, karnoskarbowych, wykroczeniach, zarówno w postępowaniu przygotowawczym, jak i sądowym;</li>
                                     <li>Reprezentacja pokrzywdzonych w sprawach karnych, karnoskarbowych w charakterze oskarżycieli posiłkowych, powodów cywilnych, oskarżycieli prywatnych;</li>
                                     <li>Pomoc skazanym w postępowaniu karnym wykonawczym;</li>
                                     <li>Pomoc w sporządzeniu pism procesowych – zażalenia, apelacji, kasacji, prywatny akt oskarżenia, wniosek o warunkowe przedterminowe zwolnienie z odbycia kary pozbawienia wolności, wniosek o odroczenie wykonania kary pozbawienia wolności;</li>
                                     <li>Uzyskanie zgody na wykonywanie kary w systemie dozoru elektronicznego.</li>
+                                    </ul>
                                 </div>
                                   <div class="col span-1-of-1 services-all-box">
                                     <p class="services-information-heading">Odszkodowania</p>
                                     <p class="services-information-text"></p>
+                                    <ul>
                                     <li>Reprezentacja prawna w dochodzeniu roszczeń odszkodowawczych za szkody majątkowe w ramach ubezpieczenia AC i OC;</li>
                                     <li>Reprezentacja prawna w dochodzeniu roszczeń niemajątkowych – zadośćuczynienia za doznane krzywdy i cierpienia.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </article>
@@ -190,14 +229,17 @@
                                 <div class="col span-1-of-1 services-all-box">
                                 <p class="services-information-heading">E-commerce</p>
                                 <p class="services-information-text"></p>
+                                <ul>
                                 <li>Przygotowywanie i negocjowanie umów dotyczących usług internetowych;</li>
                                 <li>Opracowywanie regulaminów, polityk prywatności portali internetowych, sklepów i aplikacji mobilnych;</li>
                                 <li>Doradztwo prawne w zakresie kampanii marketingowych z wykorzystaniem narzędzi internetowych;</li>
                                 <li>Weryfikacja treści regulaminów świadczenia usług drogą elektroniczną pod kątem zgodności z przepisami prawa z uwzględnieniem klauzul niedozwolonych</li>
+                                </ul>
                             </div>
                             <div class="col span-1-of-1 services-all-box">
                                 <p class="services-information-heading">Ochrona Danych Osobowych – RODO</p>
                                 <p class="services-information-text"></p>
+                                <ul>
                                 <li>Bieżące doradztwo z zakresu prawa ochrony danych osobowych;</li>
                                 <li>Opracowywanie, wdrożenie i zmiany wymaganej prawem dokumentacji przetwarzania danych osobowych</li>
                                 <li>Audyt zgodności dotychczasowych zasad przetwarzanie danych osobowych;</li>
@@ -207,6 +249,7 @@
                                 <li>Prowadzenie indywidualnych oraz grupowych szkoleń dopasowanych do profilu organizacji;</li>
                                 <li>Kompleksowa obsługa w zakresie ochrony prywatności konsumentów;</li>
                                 <li>Ochrona tajemnicy handlowej, informacji poufnych, informacji gospodarczych.</li>
+                                </ul>
                             </div>
                             </div>
                         </article>
@@ -220,9 +263,11 @@
                                 <div class="col services-all-box p-trans">
                                 <p class="services-information-heading">Prawo transportowe</p>
                                 <p class="services-information-text"></p>
+                                <ul>
                                 <li>Reprezentacja przed służbami kontrolnymi – ITD oraz PIP;</li>
                                 <li>Wsparcie prawno-organizacyjne dla przedsiębiorców oraz kierowców;</li>
                                 <li>Wyjaśnienia dotyczące protokołów kontrolnych.</li>
+                                </ul>
                                 </div>
                             </div>
                         </article>
@@ -235,10 +280,12 @@
                                 <div class="col span-1-of-1 services-all-box">
                                 <p class="services-information-heading">Prawo budowlane</p>
                                 <p class="services-information-text"></p>
+                                <ul>
                                 <li>Proces inwestycyjny;</li>
                                 <li>Przygotowanie i negocjowanie umów prawa budowlanego, umowy o roboty budowlane, umowy z podwykonawcami, umowę o prace projektowe i nadzór autorski;</li>
                                 <li>Doradztwo w zakresie zagadnień administracyjnych procesu budowlanego;</li>
                                 <li>Przygotowanie projektów i negocjowanie umów deweloperskich.</li>
+                                </ul>
                             </div>
                             </div>
                         </article>
@@ -268,7 +315,6 @@
         <footer class="footer">
             <img src="resources/img/Amelia_Zembaczynska_logo3.png" alt="Amelia Zembaczyńska Logo">
         </footer>
-        
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="resources/js/script.js"></script>
