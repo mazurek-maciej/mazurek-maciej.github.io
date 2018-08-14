@@ -297,7 +297,7 @@ section {
     }
 /* MAX-WIDTH 991px */
 @media (max-width:991px){
-    .logo-kancelaria {display: none;}
+    .navbar img {opacity: 0.8;}
     .header .navbar-nav{
         margin:0;float:none
         }
@@ -518,11 +518,11 @@ section {
     border-bottom: 1px solid #4b4b4b;
 }
 
-nav img {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.navbar img {
+    margin: 10px 0 10px 10px;
     height: 60px;
     width: 60px;
+    float: left;
 }
 
 /* -------------- */
@@ -635,7 +635,7 @@ nav img {
     background-color: #fcfcfc;
     padding: 10px;
     border-radius: 10px;
-    height: 400px;
+    height: 420px;
     border: 1px solid transparent;
     -webkit-transition: background-color 0.2s, border 0.2s;
     transition: background-color 0.2s, border 0.2s;
@@ -647,7 +647,11 @@ nav img {
     background-color: #fafafa;
     border: 1px solid #00b894;
 }
-
+.services-box .icon-medium {
+    font-size: 250%;
+    display: flex;
+    justify-content: center;
+}
 .services-head-text {
     margin-top: 40px;
     margin-bottom: 10px;
