@@ -158,9 +158,7 @@ section {
         position: relative;
         min-height: 80px;
 }
-    .navbar-nav{
-        padding-right: 30px;
-        }
+
 /* Menu LI items and children */
 
     li.nav-item{
@@ -168,7 +166,10 @@ section {
         font-size: 1em;
         float: left;
         height: 65px;
-        padding-left: 30px; /* space between menu items */
+//        padding-left: 30px; /* space between menu items */
+        padding-bottom: 30px;
+        display: flex;
+        justify-content:center;
         }
     a.nav-item-child{
         text-decoration: none;
@@ -196,7 +197,8 @@ section {
         padding-left:15px;
         padding-right:15px;
         margin-left:0;
-        margin-right:0
+        margin-right:0;
+        width: 100%;
         }
     .header .navbar>.container,.header .navbar>.container>.nav-collapse{
         padding-left:0;
