@@ -496,10 +496,15 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
   border-bottom: 1px solid #4b4b4b; }
 
 .navbar img {
-  margin: 10px 0 10px 10px;
-  height: 60px;
-  width: 60px;
-  float: left; }
+  margin: 10px 0 10px 60px;
+  height: 70px;
+  width: 110px;
+  float: left;
+  opacity: 0.8;
+  transition: opacity 0.2s; }
+
+.navbar img:hover {
+  opacity: 1; }
 
 /* -------------- */
 /*  About container */
@@ -645,7 +650,7 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
   padding-bottom: 0;
   background-color: #fdfdfd; }
   .section-services-information .services-information-image {
-    background: url(key-uslugi.jpg);
+    background: url(wynand-van-poortvliet-42130-unsplash.jpg);
     background-size: cover;
     height: 50vh;
     color: #fff;
@@ -782,6 +787,15 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
     font-size: 110%;
     font-family: 'Lato'; }
 
+.mail-contact {
+  text-decoration: none; }
+
+.contact-box-info p:first-child {
+  transition: color 0.2s; }
+
+.contact-box-info p:first-child:hover {
+  color: #00b894; }
+
 /* -------------- */
 /*  Footer */
 /* -------------- */
@@ -794,7 +808,8 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  border-top: 2px solid #00b894; }
   .footer img {
     width: 190px;
     height: 130px;

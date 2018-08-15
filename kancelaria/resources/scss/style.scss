@@ -5,6 +5,9 @@
 /* -------------- */
 /*  Elementy głowne */
 /* -------------- */
+
+$main-color: #00b894;
+
 * {
     margin: 0;
     padding: 0;
@@ -522,11 +525,14 @@ section {
 }
 
 .navbar img {
-    margin: 10px 0 10px 10px;
-    height: 60px;
-    width: 60px;
+    margin: 10px 0 10px 60px;
+    height: 70px;
+    width: 110px;
     float: left;
+    opacity: 0.8;
+    transition: opacity 0.2s;
 }
+.navbar img:hover {opacity: 1;}
 
 /* -------------- */
 /*  About container */
@@ -684,7 +690,7 @@ section {
     padding-bottom: 0;
     background-color: #fdfdfd;
         .services-information-image {
-        background: url(key-uslugi.jpg);
+        background: url(wynand-van-poortvliet-42130-unsplash.jpg);
         background-size: cover;
         height: 50vh;
         color: #fff;
@@ -859,7 +865,6 @@ section {
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-row-gap: 20px;
-        
         img {
             width: 80px;
             height: 80px;
@@ -870,6 +875,9 @@ section {
             font-family: 'Lato';
         }
     }
+.mail-contact {text-decoration: none;}
+.contact-box-info p:first-child {transition: color 0.2s;};
+.contact-box-info p:first-child:hover {color: $main-color;}
 
 /* -------------- */
 /*  Footer */
@@ -889,6 +897,7 @@ section {
         height: 130px;
         padding: 10px 0 10px 0;
     }
+    border-top: 2px solid #00b894;
 }
 
 

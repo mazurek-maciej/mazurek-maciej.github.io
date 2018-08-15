@@ -132,8 +132,7 @@ $(document).ready(function() {
         $('.js--wp-5').addClass('animated fadeIn')
     }, {
         offset: "50%"
-    });
-    
+    });    
 });
 
 function myFunction() {
@@ -143,7 +142,13 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
-}
+};
+
+// MailTo func
+
+
+
+
 /*
 function classToggle() {
   const navs = document.querySelectorAll('.Navbar__Items')
