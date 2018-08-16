@@ -181,7 +181,7 @@ section {
         margin: 0 auto;
         margin-left: 70px;
         margin-top: 0px;
-        padding: 8px 0;
+        padding: 15px 0;
         -webkit-transition: color 0.2s, background-color 0.2s, border 0.2s ease-out;
         transition: color 0.2s, background-color 0.2s, border 0.2s ease-out;
         border-bottom: 2px solid transparent;
@@ -533,7 +533,7 @@ section {
     transition: opacity 0.2s;
 }
 .navbar img:hover {opacity: 1;}
-
+.logo-kancelaria-mobile{display: none}
 /* -------------- */
 /*  About container */
 /* -------------- */
