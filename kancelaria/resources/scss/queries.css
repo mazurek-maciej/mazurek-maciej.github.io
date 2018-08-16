@@ -117,6 +117,8 @@
     .services-information-box {font-size: 100%; height: auto;}
     .section-services-information .services-information-image h3 {font-size: 200%; padding-top: 50px;}
     .section-services-information .services-information-box {height: auto; padding: 10px 10px 10px 10px; font-size: 120%;}
+    .section-services-information h3 {font-size: 120%; padding-top: 20px;}
+    .services-info-row {padding-bottom: 20px;}
     .ser-info-text {font-size: 60%;}
     .row-section-team {padding: 40px 0 40px 0;}
     .section-team {padding: 0;}
