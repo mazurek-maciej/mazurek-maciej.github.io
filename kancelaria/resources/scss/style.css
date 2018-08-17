@@ -435,7 +435,7 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
 /* -------------- */
 .sticky {
   margin-bottom: 0;
-  background-color: rgba(245, 245, 245, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   transition-duration: .3s;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
