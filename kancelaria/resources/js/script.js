@@ -56,8 +56,10 @@ $(document).ready(function() {
     $(".js--section-about").waypoint(function(direction) {
         if (direction == "down") {
             $(".main-nav").addClass("sticky");
+            $(".main-nav").removeClass("navbar");
         } else {
             $(".main-nav").removeClass("sticky");
+            $(".main-nav").addClass("navbar");
         }
     }, {
         offset: '60px;'

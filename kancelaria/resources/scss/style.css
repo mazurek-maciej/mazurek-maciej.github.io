@@ -320,16 +320,15 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
     height: 40px;
     opacity: 0;
     border: none;
-    margin: 35px 0;
     position: absolute;
     top: 0px;
     right: 0px;
     z-index: 1000;
     float: right;
     padding: 9px 10px;
-    margin-top: 31px;
     margin-right: 35px;
     margin-bottom: 8px;
+    margin-top: 10px;
     background-color: transparent;
     background-image: none;
     border: 1px solid transparent;
@@ -350,7 +349,7 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
 
   #toggle + label {
     position: absolute;
-    top: 27px;
+    top: 10px;
     right: 50px;
     border: none;
     color: #262626;
@@ -434,22 +433,21 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
 /* -------------- */
 /*  Pasek nawigacyjny Sticky */
 /* -------------- */
-/*
 .sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    z-index: 9999;
-    height: 60px;
-}
-*/
+  margin-bottom: 0;
+  background-color: rgba(245, 245, 245, 0.9);
+  transition-duration: .3s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  position: relative;
+  max-height: 70px;
+  box-shadow: 0 0.2px 20px #d8d8d8;
+  z-index: 99999; }
+
 .sticky .btn:link,
 .sticky .btn:visited {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-weight: 300;
   margin: 0 auto;
   margin-left: 40px;
@@ -465,10 +463,12 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
   border-bottom: 2px solid #4b4b4b; }
 
 .sticky .logo-kancelaria {
-  height: 50px;
-  width: 50px;
-  margin-top: 5px;
-  margin-bottom: 0; }
+  margin: 10px 0 10px 60px;
+  height: 55px;
+  width: 90px;
+  float: left;
+  opacity: 0.8;
+  transition: opacity 0.2s; }
 
 .btn:link,
 .btn:visited {
