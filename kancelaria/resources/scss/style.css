@@ -127,14 +127,6 @@ section {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
 
-.header .navbar {
-  margin-bottom: 0;
-  background-color: #003366;
-  border-radius: 0px;
-  transition-duration: .3s;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
-
 .header .navbar-nav {
   padding-left: 0;
   margin-bottom: 0;
@@ -148,7 +140,8 @@ section {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   position: relative;
-  min-height: 80px; }
+  min-height: 80px;
+  box-shadow: 0 0.2px 20px #d8d8d8; }
 
 /* Menu LI items and children */
 li.nav-item {
@@ -781,12 +774,12 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: 20px; }
+  grid-row-gap: 20px;
+  align-items: center; }
   .contact-box-info img {
-    width: 80px;
-    height: 80px; }
+    width: 60px;
+    height: 60px; }
   .contact-box-info p {
-    padding-top: 20px;
     font-size: 110%;
     font-family: 'Lato'; }
 
@@ -850,5 +843,22 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
 
 .js--wp-5.animated {
   opacity: 1; }
+
+/* -------------- */
+/*  Polityka prywatności */
+/* -------------- */
+.section-privacy-policy {
+  background-color: #fdfdfd; }
+  .section-privacy-policy h3 {
+    padding-top: 50px; }
+  .section-privacy-policy h4 {
+    padding: 10px 0 10px 0;
+    text-decoration-line: underline;
+    text-decoration-color: #00b894;
+    font-size: 100%; }
+  .section-privacy-policy p {
+    font-size: 90%;
+    letter-spacing: 1.2px;
+    font-weight: 100; }
 
 /*# sourceMappingURL=style.css.map */

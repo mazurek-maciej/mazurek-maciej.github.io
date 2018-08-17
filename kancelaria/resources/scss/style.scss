@@ -46,7 +46,7 @@ h1 {
 h1:after {
     display: block;
     height: 2px;
-    background-color: #00b894;
+    background-color: $main-color;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -70,7 +70,7 @@ h3 {
 h3:after {
     display: block;
     height: 2px;
-    background-color: #00b894;
+    background-color: $main-color;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -138,14 +138,6 @@ section {
         transition-property:all;
         transition-timing-function:cubic-bezier(.7,1,.7,1)
         }
-    .header .navbar{
-        margin-bottom:0;
-        background-color: #003366;
-        border-radius: 0px;
-        transition-duration:.3s;
-        transition-property:all;
-        transition-timing-function:cubic-bezier(.7,1,.7,1)
-        }
     .header .navbar-nav{
         padding-left:0;
         margin-bottom:0;
@@ -160,6 +152,7 @@ section {
         transition-timing-function:cubic-bezier(.7,1,.7,1);
         position: relative;
         min-height: 80px;
+        box-shadow: 0 0.2px 20px #d8d8d8;
 }
 
 /* Menu LI items and children */
@@ -188,7 +181,7 @@ section {
         display: inline-block;
         }
     .navbar-nav>li.nav-item>a:hover{
-        color: #00b894;
+        color: $main-color;
         border-bottom: 2px solid #4b4b4b;
         } 
     header .nav-item-child:focus,.header .nav-item-child:hover{
@@ -273,7 +266,7 @@ section {
         transition-timing-function:cubic-bezier(.7,1,.7,1)
         }
     .header .navbar-toggle:hover .toggle-icon{
-        background:#00b894;
+        background:$main-color;
         transition-duration:.3s;
         transition-property:all;
         transition-timing-function:cubic-bezier(.7,1,.7,1)
@@ -281,7 +274,7 @@ section {
     .header .navbar-toggle:hover .toggle-icon:after,.header .navbar-toggle:hover .toggle-icon:before{
         width:21px;
         height:1px;
-        background:#00b894;
+        background:$main-color;
         transition-duration:.3s;
         transition-property:all;
         transition-timing-function:cubic-bezier(.7,1,.7,1)
@@ -383,7 +376,7 @@ section {
         font-size: 1.7em; 
         }
     #toggle:hover + label{
-        color: #00b894; 
+        color: $main-color; 
         }
     #toggle:checked ~ .message {
         height: 150px;
@@ -492,7 +485,7 @@ section {
 }
 
 .sticky .btn:hover,.btn:active {
-    color: #00b894;
+    color: $main-color;
     border-bottom: 2px solid rgb(75, 75, 75);
 }
 
@@ -520,7 +513,7 @@ section {
     display: inline-block;
 }
 .btn:hover,.btn:active {
-    color: #00b894;
+    color: $main-color;
     border-bottom: 1px solid #4b4b4b;
 }
 
@@ -610,7 +603,7 @@ section {
     opacity: 0.8;
 }
 .team-photo:hover {
-    border: 1px solid #00b894;
+    border: 1px solid $main-color;
     -webkit-box-shadow: 0 0 0 2px rgb(83, 188, 167);
     box-shadow: 0 0 0 2px rgb(83, 188, 167);
     border-radius: 5px;
@@ -618,7 +611,7 @@ section {
 }
 
 .team-proffesion {
-    color: #00b894;
+    color: $main-color;
     font-size: 70%;
     font-weight: 200;
 }
@@ -654,7 +647,7 @@ section {
 }
 .services-box:hover {
     background-color: #fafafa;
-    border: 1px solid #00b894;
+    border: 1px solid $main-color;
 }
 .services-box .icon-medium {
     font-size: 250%;
@@ -670,7 +663,7 @@ section {
 .services-head-text:after {
     display: block;
     height: 2px;
-    background-color: #00b894;
+    background-color: $main-color;
     content: " ";
     width: 50px;
     margin: 0 auto;
@@ -737,7 +730,7 @@ section {
         .services-information-heading:after {
             display: block;
             height: 2px;
-            background-color: #00b894;
+            background-color: $main-color;
             content: " ";
             width: 50px;
             margin: 0 auto;
@@ -769,11 +762,11 @@ section {
         transition: all 0.2s;
     }
     .btn:hover {
-        color: #00b894;
+        color: $main-color;
         border-bottom: 2px solid rgb(75, 75, 75);
     }
     .active {
-        color: #00b894;
+        color: $main-color;
     }
 }
 .services-all-box {
@@ -794,7 +787,7 @@ section {
     }
 }
 .all-services-btn-active {
-    color: #00b894;
+    color: $main-color;
 }
 
 .services-all-services {
@@ -865,12 +858,14 @@ section {
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-row-gap: 20px;
+        align-items: center;
         img {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
+            
         }
         p {
-            padding-top: 20px;
+
             font-size: 110%;
             font-family: 'Lato';
         }
@@ -897,7 +892,7 @@ section {
         height: 130px;
         padding: 10px 0 10px 0;
     }
-    border-top: 2px solid #00b894;
+    border-top: 2px solid $main-color;
 }
 
 
@@ -915,3 +910,18 @@ section {
 .js--wp-4.animated {opacity: 1;}
 .js--wp-5 {opacity: 0;}
 .js--wp-5.animated {opacity: 1;}
+
+
+/* -------------- */
+/*  Polityka prywatności */
+/* -------------- */
+
+.section-privacy-policy {
+    background-color: #fdfdfd;
+    h3 {padding-top: 50px;}
+    h4 {padding: 10px 0 10px 0; text-decoration-line: underline;text-decoration-color: $main-color; font-size: 100%;}
+    p {font-size: 90%; letter-spacing: 1.2px; font-weight:100;}
+}
+
+
+
