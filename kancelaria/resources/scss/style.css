@@ -745,6 +745,10 @@ header .nav-item-child:focus, .header .nav-item-child:hover {
     clear: both;
     padding-bottom: 10px;
     overflow: hidden; }
+  .services-all-services ul {
+    list-style-type: none; }
+  .services-all-services li {
+    padding-bottom: 10px; }
   .services-all-services .tabs-container.js .tab-content {
     display: none; }
   .services-all-services .tabs-container.js .tab-content.active {

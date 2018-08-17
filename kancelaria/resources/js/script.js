@@ -71,6 +71,10 @@ $(document).ready(function() {
       // Remove links that don't actually link to anything
       .not('[href="#"]')
       .not('[href="#0"]')
+        .not('[href="#tab1"]')
+        .not('[href="#tab2"]')
+        .not('[href="#tab3"]')
+        .not('[href="#tab4"]')
       .click(function(event) {
         // On-page links
         if (
